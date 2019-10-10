@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Box Content Overflow</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+		#contentOverflowVis {
+			height: 300px;
+			width: 300px;
+			background: orange;
+			box-sizing: content-box;
+			margin:50px;
+			padding: 50px;
+			border: 10px solid #000;
+
+			overflow: visible;
+		}
+
+		#contentOverflowScroll {
+			height: 300px;
+			width: 300px;
+			background: pink;
+			box-sizing: border-box;
+			margin:50px;
+			padding: 50px;
+			border: 10px solid #000;
+
+			overflow: scroll;
+		}
+
+		#contentOverflowAuto {
+			height: 300px;
+			width: 300px;
+			background: blue;
+			box-sizing: content-box;
+			margin:50px;
+			padding: 50px;
+			border: 10px solid #000;
+
+			overflow: auto;
+		}
+
+		#contentOverflowHidden {
+			height: 300px;
+			width: 300px;
+			background: green;
+			box-sizing: border-box;
+			margin:50px;
+			padding: 50px;
+			border: 10px solid #000;
+
+			overflow: hidden;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div id="contentOverflowVis">
+		ini adalah content ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content ini adalah content ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content 
+	</div>
+
+	<div id="contentOverflowHidden">
+		ini juga content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content 
+	</div>
+
+	<div id="contentOverflowAuto">
+		ini juga content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content 
+	</div>
+
+	<div id="contentOverflowScroll">
+		ini juga content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content  ini adalah content 
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Box Content</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+		.leftBOX {
+			height: 800px;
+			width: 700px;
+			background: orange;
+			box-sizing: content-box;
+			margin:10px;
+			padding: 5px;
+			border: 10px solid #000;
+
+			overflow: auto;
+		}
+
+		.relativa {
+			border: 5px solid #f00;
+			position: relative;
+			top: 50px;
+			left: 75px;
+			width: 250px;
+			height: 250px;
+		}
+
+		.absoluta {
+			border: 5px solid #f00;
+			position: absolute;
+			top: 50px;
+			left: 75px;
+			width: 250px;
+			height: 250px;
+		}
+
+		.fixation {
+			border: 5px solid #f00;
+			background: rgba(255,43,45,0.6);
+			position: fixed;
+			top: 10px;
+			left: 30px;
+			width: 250px;
+			height: 250px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="leftBOX">
+		ini adalah content 
+
+		<div class="relativa">
+			ini adalah relative
+
+			<div class="absoluta">
+				ini adalah absolute
+			</div>
+		</div>
+		
+
+		<div class="fixation">
+			ini adalah fixed
+		</div>
+	</div>	
+</body>
+</html>
