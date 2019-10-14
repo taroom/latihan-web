@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS 3 Variabel</title>
+<style type="text/css">
+:root {
+	--bg-color : blue;
+	--pd-def : 100px;
+	--line-def : 10px;
+}
+
+body {
+	background: var(--bg-color);
+}
+
+div#asli {
+	border: var(--line-def) solid black;
+	padding: var(--pd-def);
+}
+</style>
+</head>
+<body>
+	<div id="asli">
+		<h1>Apakah berhasil pemirsa</h1>
+	</div>
+</body>
+</html>
