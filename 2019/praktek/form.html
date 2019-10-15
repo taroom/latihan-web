@@ -5,11 +5,77 @@
 </head>
 <body>
 	<!-- method yang digunakan adalah get secara default -->
-	<form method="get">
+	<!-- untuk bisa melakukan pengiriman file, enctype harus diganti menggunakan isi "multipart/form-data" -->
+	<form method="post" enctype="multipart/form-data">
+		Nama : <br>
 		<input type="text" name="data_nama"><br>
-		<input type="password" name="data_password"><br>
-		<input type="number" name="data_angka"><br>
 
+		Password : <br>
+		<input type="password" name="data_password"><br>
+
+		Usia : <br>
+		<input type="number" name="data_usia"><br>
+
+		<!-- hidden digunakan untuk menyimpan data dalam form, biasanya untuk id : nis, nik -->
+		<input type="hidden" name="data_nis" value="123"><br>
+
+		Warna Kesukaan : <br>
+		<input type="color" name="data_warna_kesukaan"><br>
+
+		No. Telpon/HP : <br>
+		<input type="tel" name="data_telpon"><br>
+
+		Email : <br>
+		<input type="email" name="data_email"><br>
+
+
+		Hobby : <br>
+		<label>
+			sepak bola : <input type="checkbox" name="data_hobby" value="sepak bola" checked>
+		</label><br>
+
+		<label>
+			volly : <input type="checkbox" name="data_hobby" value="volly" checked>
+		</label><br>
+
+		<label>
+			berenang : <input type="checkbox" name="data_hobby" value="berenang">
+		</label><br>
+
+		<hr>
+
+		<!-- radio -->
+
+		Tingkatan Kelas :<br>
+		<label>
+			I <input type="radio" name="data_kelas" value="I">
+		</label><br>
+
+		<label>
+			II <input type="radio" name="data_kelas" value="II" checked>
+		</label><br>
+
+		<label>
+			III <input type="radio" name="data_kelas" value="III">
+		</label><br>
+
+		<hr>
+
+		<!-- date -->
+
+		Tanggal Lahir :<br>
+		<input type="date" name="data_tanggal_lahir" value="13-10-2001"><br>
+
+		Waktu Sholat :<br>
+		<input type="datetime-local" name="data_waktu">
+		<hr>
+
+		<!-- untuk mengambil file -->
+		<input type="file" name="data_upload">
+		
+		<hr>
+
+		Deskripsi Siswa : <br>
 		<textarea name="deskripsi"></textarea><br>
 
 		<select name="jenis_kelamin">

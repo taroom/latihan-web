@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Restrict</title>
+</head>
+<body>
+<form>
+	<!-- untuk membatasi angka gunakan min="angka" -->
+	<input type="number" name="data_angka_min" min="5">
+	<br>
+	<!-- juga max="angka" -->
+	<input type="number" name="data_angka_max" max="10">
+	<br>
+	<!-- gabungan keduanya -->
+	<input type="number" name="data_angka_minmax" min="2" max="10">
+	<br>
+	
+	<hr>
+	<!-- Penggunaan read only -->
+	<input type="text" name="data_readonly" value="35912192920282" readonly>
+
+	<!-- penggunaan disabled -->
+	<input type="text" name="data_disabled" value="abc" disabled>
+	<hr>
+
+	<!-- penggunaan size -->
+	<input type="text" name="data_size1" value="sss" size="30"><br>
+	<input type="text" name="data_size2" value="sss"><br>
+	<hr>
+
+	<!-- penggunaan step -->
+	<!-- type range untuk mengambil angka dalam jangkauan min s/d max -->
+	<input type="range" name="data_range" step="2" min="2" max="20">
+	<hr>
+
+
+	<!-- penggunaan required, digunakan saat pengguna diharuskan untuk mengisi inputan -->
+	<input type="text" name="data_harus" required>
+
+	<!-- pattern, digunakan untuk memaksa pengguna mengisi sesuai pola yang kita tentukan, regex 
+		ex : 134-bcag -->
+	<br>
+	Tolong isikan seperti contoh : 134-abcd <br>
+	<input type="text" name="data_pattern" 
+	pattern="[0-9]{3}-[a-z]{4}">
+	<br>
+	<hr>
+
+	<!-- penggunaan autofocus, digunakan untuk langsung focus ke inputan yang diberikan properti autofocus -->
+	<input type="text" name="data_autofocus" autofocus="true">
+	<br>
+
+	<!-- penggunaan placeholder, digunakan untuk memberikan petunjuk kepada pengguna saat inputan kosong -->
+	<input type="text" name="data_place" placeholder="tolong isi data alamat anda">
+	<br>
+
+	<input type="submit" name="kirim" value="kirim">
+</form>
+</body>
+</html>
