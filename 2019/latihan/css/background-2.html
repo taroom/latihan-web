@@ -1,57 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CSS Background</title>
+	<title>CSS Background Image</title>
 	<style type="text/css">
 		body {
-			background: #c01;
-		}
-
-		.bgcolorblue{
-			background-color: #00f;
-			width: 400px;
-			height: 400px;
-			float: left;
-		}
-
-		.bgcolorteal {
-			background-color: teal;
-			width: 400px;
-			height: 400px;
-			float: left;
-		}
-
-		.rgbback {
-			background-color: rgb(0,255,0);
-			width: 400px;
-			height: 400px;
-			float: left;
-		}
-
-		.rgbback_alpha {
-			background-color: rgba(0,255,0,0.5);
-			width: 400px;
-			height: 400px;
-			float: left;
-		}
-
-		.hslback {
-			background-color: hsl(240,100%,20%);
-			/*
-			hue = color wheel 0 - 360, 
-			saturasi = 0 grey shade to 100(in percent) fullcolor
-			lightness = 0 dark to 100 (in percent) light
-			 */
-			width: 400px;
-			height: 400px;
-			float: left;
-		}
-
-		.hslback_alpha {
-			background-color: hsla(60,100%,30%, 0.3);
-			width: 400px;
-			height: 400px;
-			float: left;
+			background: url('gambar.jpg');
 		}
 	</style>
 </head>
@@ -62,24 +15,5 @@
 	<h2>Ini adalah div pakai warna #00f</h2>
 </div>
 
-<div class="bgcolorteal">
-	<h2>Pakai Teal</h2>
-</div>
-
-<div class="rgbback">
-	<h2>Pake RGB</h2>
-</div>
-
-<div class="rgbback_alpha">
-	<h2>Pake RGBA</h2>
-</div>
-
-<div class="hslback">
-	<h2>Pake HSL</h2>
-</div>
-
-<div class="hslback_alpha">
-	<h2>Pake HSLA</h2>
-</div>
 </body>
 </html>
