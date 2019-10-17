@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo CSS</title>
+	<style type="text/css">
+		a {
+			border:solid 5px red;
+		}
+
+		a:link {
+			/* a mempunyai halaman yg belum pernah dikunjungi */
+			background:green;
+		}
+
+		a:visited {
+			/* a hrefnya pernah dikunjungi*/
+			background:pink;
+		}
+
+		a:hover {
+			/*ketika a dilewati*/
+			font-size: 30px;
+		}
+
+		a:active { 
+			/*ketika a ditekan/click */
+			font-size: 50px;
+			background:black;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://www.facebook.com">sebuah link 1</a><br>
+	<a href="http://www.awuran.com/">sebuah link 2</a><br>
+</body>
+</html>

@@ -5,34 +5,59 @@
 </head>
 <body>
 <form>
-	pilih jenis makanan : <br>
-	<select name="makanan">
-		<optgroup label="Makanan">
-			<option value="nasi-goreng">Nasi Goreng</option>
-			<option value="nasi-kucing">Nasi Kucing</option>
-		</optgroup>
-
-		<optgroup label="Minuman">
-			<option value="es-teh">Es Teh</option>
-			<option value="es-rawon">Es Rawon</option>
-		</optgroup>
-	</select>
-	<br>
-	<br>
-	<textarea cols="30" rows="9"></textarea>
 	<fieldset>
-		<legend>Grup</legend>
-
-		<mark>ok</mark>
+		<!-- fieldset = digunakan untuk grouping inputan -->
+		<legend>Informasi Pribadi</legend>
+		<!-- body -->
+		Nama Pelanggan : <br>
+		<input type="text" name="nama_pelanggan" placeholder="Masukkan Nama Anda"><br>
+		Alamat Pelanggan : <br>
+		<textarea name="alamat_pelanggan" placeholder="Masukkan Alamat Anda"></textarea>
 	</fieldset>
 
-	<button type="button" onclick="alert('az');">imp</button>
+	<fieldset>
+		<legend>Daftar Pesanan</legend>
 
-	<input type="text" name="" list="operator">
-	<datalist id="operator">
-		<option>klo</option>
-		<option>223</option>
+		Nama Pesanan : <br>
+		<select name="menu_makanan">
+			<optgroup label="Makanan">
+				<option value="nasi-liwet">Nasi Liwet</option>
+				<option value="nasi-rawon">Nasi Rawon</option>
+				<option value="nasi-kucing">Nasi Kucing</option>
+			</optgroup>
+
+			<optgroup label="Minuman">
+				<option value="es-teh">Es Teh</option>
+				<option value="es-the-gun">Es The Gun</option>
+				<option value="es-cendol">Es Cendol</option>
+				<option value="es-dawet">Es Dawet</option>
+			</optgroup>
+
+			<optgroup label="Snack">
+				<option value="kentang-crispy">Kentang Crispy</option>
+				<option value="jasuke">Jasuke</option>
+				<option value="jamur-goreng">Jamur Goreng</option>
+			</optgroup>
+		</select>
+		<br>
+
+		Jumlah Pesanan :<br>
+		<input type="number" name="jml_pesanan" placeholder="Masukkan jumlah pesanan">
+	</fieldset>
+	
+	<hr>
+
+	<input type="text" name="data_list" list="nama_siswa">
+
+	<datalist id="nama_siswa">
+		<option>Agus Musyafak</option>
+		<option>Farhan Hendrawansyah</option>
+		<option>M. Maynizar Saputro</option>
+		<option>Nafisa Jamil</option>
+		<option>Yaskur Hamadi</option>
 	</datalist>
+
+	<button type="button" onclick="alert('kamu kok tekan saya')">Klik Donk</button>
 </form>
 </body>
 </html>
