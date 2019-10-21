@@ -1,0 +1,46 @@
+body {
+	background-color: salmon;
+}
+
+.kotak {
+	width: 300px;
+	height: 300px;
+}
+
+#box1 {
+	background-color: rgb(30,4,56);
+	padding: 40px;
+	/* padding : antara garis tepi dan content/ tulisan */
+	border: solid 10px red;
+	
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: 100px;
+	margin-right: 100px;
+
+	margin: 100px;
+	/* border : garis tepi */
+	/* margin : atur jarak antar box */
+	color: white;
+}
+
+#box2 {
+	background-color: hsl(45, 10%, 40%);
+	padding: 80px;
+	margin: 200px 0 0 800px;
+	/*margin dan padding :
+	angka pertama : top|atas;
+	angka kedua : right|kanan;
+	angka ketiga : bottom|bawah;
+	angka keempat : left|kiri;
+	*/
+}
+
+#box3 {
+	background-color: lightblue;
+	margin:100px 200px;
+	/*
+	angka pertama : top & bottom;
+	angka kedua : right & left;
+	*/
+}
