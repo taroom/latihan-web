@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background:url(../gambar.jpg);
+	background-attachment: fixed;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	margin-top: 80px;
+	height: 1200px;
+}
+
+header {
+	width: 100%;
+	height: 200px;
+	background-color: salmon;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 25px;
+	line-height: 200px;
+}
+
+#topp {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	padding: 0;
+	background-color: orange;
+	top: 0;
+	z-index: 9;
+}
+
+#topp ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#topp ul li {
+	float: left;
+}
+
+#topp ul li a {
+	padding: 10px;
+	height: 60px;
+	line-height: 40px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: white;
+}
+
+#topp ul li a:hover {
+	background-color: aqua;
+}
+
+.active {
+	background-color: lime;
+}
+
+/* nav */
+nav#stick {
+	background-color: lightblue;
+	width: 100%;
+	height: 40px;
+	padding: 10px !important;
+	position: sticky;
+	position: -moz-sticky;
+	position: -webkit-sticky;
+	top:60px;
+	z-index: 10;
+}
+
+nav a {
+	text-decoration: none;
+}
+/* content */
+.content {
+	float: left;
+	background-color: yellow;
+	width: 75%;
+}
+
+aside {
+	background-color: red;
+	float: right;
+	width: 25%;
+}
+
+aside::after {
+	clear: both;
+}
+/*footer*/
+footer::before {
+	content: "";
+	clear:both;
+}
+
+footer {
+	width: 100%;
+	height: 30px;
+	background-color: blue;
+}
