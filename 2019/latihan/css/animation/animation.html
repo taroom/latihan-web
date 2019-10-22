@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		.container {
+	  		height: 700px;
+			width: 1400px;
+			border: solid 1px red;
+			position: relative;
+		}
+		#objek {
+			width: 200px;
+			height: 200px;
+			background-color: coral;
+			padding: 0;
+			text-align:center;
+			line-height:200px;
+			border-radius:50%;
+			margin: 0;
+			position: absolute;
+			animation: pergerakan 10s infinite;
+		}
+
+		@keyframes pergerakan {
+			0% {
+				top:0;
+				left: 0;
+		        background:yellow;
+				transition: top 2s, left 2s;
+			}
+
+			25% {
+				top: 0px;
+				left: 1200px;
+		        background:blue;
+		        color:white;
+		        border-radius:0;
+		        transform: rotateX(180deg);
+				transition: top 2s, left 2s;
+			}
+
+			50% {
+				top: 500px;
+				left: 1200px;
+		        border-radius:50%;
+		        background:pink;
+		        color:yellow;
+				transition: top 2s, left 2s;
+				transform: rotateY(180deg);
+			}
+
+			75% {
+				top: 500px;
+	  			left: 0px;
+		        border-radius:0;
+				transition: top 2s, left 2s;
+				transform: rotateZ(180deg);
+			}
+
+			100% {
+				top:0;
+				left: 0;
+		        background:yellow;
+				transition: top 2s, left 2s;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="objek">
+			saya adalah objek
+		</div>
+	</div>
+
+</body>
+</html>
