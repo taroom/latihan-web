@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		.container {
+	  		height: 700px;
+			width: 1400px;
+			border: solid 1px red;
+			position: relative;
+		}
+
+		#objek img {
+			width: 600px;
+			height: 600px;
+			border-radius:50%;
+			animation: pergerakan 4s infinite;
+			animation-timing-function: linear;
+		}
+
+		@keyframes pergerakan {
+			0% {
+				transform: rotate(0);
+			}
+
+			25% {
+		        transform: rotate(90deg);
+			}
+
+			50% {
+		        transform: rotate(180deg);
+			}
+
+			75% {
+				transform: rotate(270deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="objek">
+			<img src="../gambar.jpg">
+		</div>
+	</div>
+
+</body>
+</html>
