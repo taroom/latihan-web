@@ -1,0 +1,72 @@
+.kotak {
+	width: 200px;
+	height: 200px;
+}
+/* untuk file position-1.html*/
+#satu {
+	background: lime;
+	position: static;
+	/* jika static tblr tidak bekerja*/
+	top:30px;
+	left: 40px;
+}
+
+#dua {
+	background: lightblue;
+	position: relative;
+	top:30px;
+	left: 40px;
+	/* jika non-static tblr bekerja*/
+}
+
+#tiga {
+	background: pink;
+	position: relative;
+	top: -10px;
+	right: 50px;
+}
+
+/*untuk file position-2.html */
+
+#empat {
+	background-color: salmon;
+	position: static;
+}
+
+#lima {
+	background: lightgreen;
+	position: absolute;
+	top: 45px;
+	left: 350px;
+}
+
+#enam {
+	background: cyan;
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	padding: 20px;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+}
+
+#container {
+	width: 800px;
+	min-height: 1200px;
+	/*min-height akan memberikan dimensi tinggi, jika kontennya melewati tinggi yang ditentukan maka tinggi element mengikuti konten */
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	border: dotted 5px red;
+	/* jika pakai margin 0 auto maka akan center*/
+}
+
+#sticky {
+	position: sticky;
+	top:50px;
+	width: 100%;
+	height: 40px;
+	background: red;
+	color: white;
+}
