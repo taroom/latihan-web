@@ -1,0 +1,20 @@
+#kiri {
+	float: left;
+	width: 50%;
+	background: #FF0000;
+}
+
+#kanan {
+	float: right;
+	width: 50%;
+	background-color: #00FF00;
+}
+
+#next {
+	clear: both;
+	/* both -> pengaruh keduanya (left/right) dibersihkan*/
+}
+
+.bulat {
+	border-radius: 50%;
+}
