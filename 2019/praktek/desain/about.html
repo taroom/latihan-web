@@ -6,13 +6,78 @@
 </head>
 <body>
 <div id="sticky">
-	<a href="index.html">Beranda</a> 
-	<a href="about.html">Tentang</a> 
-	<a href="contact.html">Kontak</a> 
+	<ul>
+		<li><a href="index.html">Beranda</a> </li>
+		<li><a href="about.html" class="active">Tentang</a></li>
+		<li><a href="contact.html">Kontak</a> </li>
+	</ul> 
 </div>
 
 <div id="container">
-	<h1>About</h1>	
+	<div id="header">
+		<h1>Blog Taroom</h1>
+		<!-- ini akan menjadi header blog kita -->
+	</div>
+	<!-- kita buat 2 div -->
+	<div id="kiri">
+		<!-- ini akan menjadi bagian konten -->
+		<h2>Tentang Taroom</h2>
+		Saya adalah mahasiswa Universitas PGRI Ronggolawe Tuban. kemampuan saya saat ini :
+		<br>
+		<table id="skill">
+			<tr>
+				<td>HTML</td>
+				<td>: 70%</td>
+			</tr>
+			<tr>
+				<td>CSS</td>
+				<td>: 50%</td>
+			</tr>
+			<tr>
+				<td>JS</td>
+				<td>: 30%</td>
+			</tr>
+			<tr>
+				<td>PHP</td>
+				<td>: 60%</td>
+			</tr>
+			<tr>
+				<td>MYSQL</td>
+				<td>: 60%</td>
+			</tr>
+		</table>
+
+		<hr>
+
+		<div id="galeri">
+			<div class="foto">
+				<img src="im.png" class="foto-xbox" alt="">
+			</div>
+
+			<div class="foto">
+				<img src="im.png" class="foto-xbox" alt="">
+			</div>
+
+			<div class="foto">
+				<img src="im.png" class="foto-xbox" alt="">
+			</div>
+
+			<div class="foto">
+				<img src="im.png" class="foto-xbox" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="kanan">
+		<!-- ini akan menjadi bagian samping yang berisi dengan link -->
+		<img src="penulis.jpg" id="gambar-penulis">
+		<br>
+		<a href="">Link Ke Beranda</a><br>
+		<a href="">Link Ke Beranda</a><br>
+		<a href="">Link Ke Beranda</a><br>
+		<a href="">Link Ke Beranda</a><br>
+		<a href="">Link Ke Beranda</a><br>
+	</div>
+	<div id="footer">Copyright &copy; 2019 by Agus Sutarom</div>
 </div>
 </body>
 </html>

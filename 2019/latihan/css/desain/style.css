@@ -1,0 +1,17 @@
+#sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: lightblue;
+}
+
+#container {
+	border: 1px solid red;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 100px;
+}

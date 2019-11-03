@@ -1,17 +1,108 @@
+body {
+	background: url(bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#header {
+	/* kita atur div#header dengan aturan */
+	font-size: 30px;
+	border: 1px dotted red;
+	/*kita tengahkan text */
+	text-align: center;
+}
+
 #sticky {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 50px;
-	padding: 20px;
+	height: 60px;
+	padding: 0;
 	box-sizing: border-box;
 	background: lightblue;
+	z-index: 1;
+}
+
+#sticky ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	/* overflow digunakan untuk menangani masalah ketika content melebihi box*/
+}
+
+#sticky ul li {
+	float: left;
+	/* membuat semua mengapung ke kiri*/
+}
+
+#sticky ul li a {
+	box-sizing: border-box;
+	padding: 10px;
+	height: 60px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: white;
+}
+
+#sticky ul li a:hover {
+	background:orange;
+}
+
+.active {
+	background: lime;
 }
 
 #container {
+	background: rgba(255,255,255,0.8);
 	border: 1px solid red;
 	width: 900px;
+	height: 1000px;
 	margin: 0 auto;
 	margin-top: 100px;
+}
+
+#kiri {
+	/*agar perhitungan tidak terlalu kacau kita gunakan box-sizing*/
+	box-sizing: border-box;
+	float: left;
+	width: 70%;
+	border: 1px solid blue;
+	padding: 10px;
+}
+
+#kanan {
+	box-sizing: border-box;
+	float: right;
+	width: 30%;
+	border: 1px dashed #010;
+	padding: 10px;
+}
+
+#footer {
+	/*untuk membersihkan pengaruh float dari kiri dan kanan kita gunakan clear */
+	clear: both;
+}
+
+#skill {
+	width: 100%;
+}
+
+#skill tr td {
+	border-bottom: 1px solid black;
+}
+
+#gambar-penulis {
+	width: 70%;
+	border-radius: 50%;
+	position: relative;
+	left: 10%;
+	top:10%;
+}
+
+#galeri .foto {
+	
 }
