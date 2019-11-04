@@ -1,0 +1,80 @@
+body {
+	background: salmon;
+}
+
+#rotasi {
+	background: yellow;
+	width: 300px;
+	height: 300px;
+}
+
+#rotasi:hover {
+	background: blue;
+	transform: rotate(120deg);
+	/* rotasi 2d */
+}
+
+.kotak {
+	width: 250px;
+	height: 250px;
+}
+
+.fkiri {
+	float: left;
+	margin-right: 30px;
+}
+
+#rotasi-x {
+	background: white;
+	transform: rotateX(180deg);
+}
+
+#rotasi-y {
+	background: green;
+	transform: rotateY(120deg);
+}
+
+#rotasi-z {
+	background: blue;
+	transform: rotateZ(120deg);
+}
+
+#rotasi-xyz {
+	background: pink;
+	transform: rotateX(30deg) rotateY(60deg) rotateZ(45deg);
+}
+
+/* scale */
+#scale {
+	/* kondisi awal*/
+	background: lightgreen;
+}
+
+#scale:hover {
+	/* kondisi ketika mouse lewat */
+	/* hover : effect yang terjadi ketika dilewati oleh cursor mouse */
+	margin:30px;
+	background: blue;
+	color: white;
+	transform:rotate(-30deg) scale(1.5, 0.5);
+	/* x : 1.5, y : 0.5
+
+	250 x 1.5 -> (x)
+	250 x 0.5 -> (y)
+
+	90 derajat -> 90 degree
+	90deg 
+	 */
+}
+
+/* skew */
+#skew {
+	background: blue;
+	color: white;
+	transform: skew(20deg);
+}
+
+#skew2 {
+	background: yellow;
+	transform: skew(20deg, 40deg);
+}

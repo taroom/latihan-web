@@ -22,6 +22,7 @@ body {
 	box-sizing: border-box;
 	background: lightblue;
 	z-index: 1;
+	/* z-index : digunakan untuk mengatur urutan tumpukan dari element dengan menggunakan sumbu z */
 }
 
 #sticky ul {
@@ -101,8 +102,4 @@ body {
 	position: relative;
 	left: 10%;
 	top:10%;
-}
-
-#galeri .foto {
-	
 }
