@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gotham</title>
+	<style type="text/css">
+		body {
+			background: url(night.jpg);
+			background-size: cover;
+			padding: 0;
+			margin:0;
+		}
+
+		.rain {
+			padding: 0;
+			margin:0;
+			background: url(rdrop2.png);
+			height: 100vh;
+			animation: hujan .4s linear infinite;
+		}
+
+		.light {
+			/*content: '',*/
+			padding: 0;
+			margin:0;
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			animation:petir 2s linear infinite;
+			opacity: 1;
+		}
+		
+		@keyframes hujan {
+			0% {
+				background-position: 0% 0%;
+			}
+			100% {
+				background-position: 20% 20%;	
+			}
+		}
+
+		@keyframes petir {
+			0% { opacity: 0; }
+			10% { opacity: 0; }
+			12% { opacity: 1; }
+			15% { opacity: 0; }
+			25% { opacity: 0; }
+			40% { opacity: 1; }
+			50% { opacity: 0; }
+			100% { opacity: 0; }
+		}
+
+		.lamp {
+			position: absolute;
+			top:100px;
+			left: 1000px;
+			padding: 5px;
+			box-shadow: -1px -1px 48px 25px rgba(226,255,8,1);
+			border-radius: 50%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="rain">
+		<div class="light"></div>
+		<div class="lamp">
+			<img src="lamp.gif" width="100" alt="">
+		</div>
+	</div>
+</body>
+</html>

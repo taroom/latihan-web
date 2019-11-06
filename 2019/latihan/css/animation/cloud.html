@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		body {
+			background: salmon;
+		}
+		.container {
+			width: 400px;
+			height: 600px;
+			background: skyblue;
+			margin:0 auto;
+			position: relative;
+			overflow: hidden;
+			animation:changeSky 30s infinite linear;
+		}
+
+		.cloud-container {
+			position: absolute;
+			top: 0;
+			left: 600px;
+		}
+
+		#cloud1 {
+			animation: cloudrun 20s infinite linear;
+		}
+
+		#cloud2 {
+			animation: cloudrun 20s infinite linear;
+			animation-delay: 5s;
+		}
+
+		#cloud3 {
+			animation: cloudrun 20s infinite linear;
+			animation-delay: 10s;
+		}
+
+		#cloud4 {
+			animation: cloudrun 20s infinite linear;
+			animation-delay: 15s;
+		}
+
+		@keyframes cloudrun {
+			0% {
+				top: 100px;
+				left: 400px;
+			}
+
+			100% {
+				top: 100px;
+				left: -600px;
+			}
+		}
+		/* grass */
+		.grass {
+			background: url(grass.png);
+			background-size: contain;
+			background-repeat: repeat-x;
+			height: 100px;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		.tree {
+			background: url(tree.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 250px;
+			width: 195px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		@keyframes changeSky {
+			0% {
+				background: midnightblue;
+			}
+
+			20% {
+				background: skyblue;
+			}
+
+			40% {
+				background: lightskyblue;
+			}
+
+			60% {
+				background: orange;
+			}
+
+			80% {
+				background: darkorange;
+			}
+
+			90% {
+				background: indigo;
+			}
+
+			100% {
+				background: midnightblue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="cloud1" class="cloud-container">
+			<img src="cloud.png" height="400" alt="">
+		</div>
+
+		<div id="cloud2" class="cloud-container">
+			<img src="cloud.png" height="300" alt="">
+		</div>
+
+		<div id="cloud3" class="cloud-container">
+			<img src="cloud.png" height="300" alt="">
+		</div>
+
+		<div id="cloud4" class="cloud-container">
+			<img src="cloud.png" height="300" alt="">
+		</div>
+
+		<div class="tree"></div>
+		<div class="grass"></div>
+	</div>
+</body>
+</html>

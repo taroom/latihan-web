@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		.kotak {
+			width: 200px;
+			height: 200px;
+		}
+
+		.boxwrap {
+			border: 1px solid red;
+		}
+
+		/* box */
+		#box {
+			background: black;
+			color: white;
+			transition: all 3s;
+		}
+
+		#box:hover {
+			transform-origin: center;
+			transform: translate(30em, 10em);
+			transition: all 2s;
+		}
+
+		#box2 {
+			background: blue;
+			color: white;
+			transition: transform 1s ease;
+			transform-origin: right top;
+		}
+
+		#box2:hover {
+			transform-origin: right top;
+			/* jika left saja secara default akan menjadi left center
+			
+			left top
+			left / left center
+			left bottom
+
+			center top
+			center / center center
+			center bottom
+
+			right top
+			right / right center
+			right bottom
+
+			*/
+			transform: rotate(10deg);
+			transition: transform 3s ease;
+		}
+	</style>
+</head>
+<body>
+	<div class="boxwrap kotak">
+	<div id="box" class="kotak">aku adalah box origin center</div>
+	</div>
+
+	<div class="boxwrap kotak">
+	<div id="box2" class="kotak">aku adalah box origin left</div>
+	</div>
+</body>
+</html>
