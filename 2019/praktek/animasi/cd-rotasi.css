@@ -1,0 +1,35 @@
+body {
+	background: black;
+}
+
+img {
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	/* border-radius -> 50% membuat sebuah effect lingkaran */
+	/*2. implementasi keyframe*/
+	animation:putar 5s linear infinite;
+}
+
+/* 1. buat keyframes */
+@keyframes putar {
+	0% {
+		transform: rotate(-0deg);
+	}
+
+	25% {
+		transform: rotate(-90deg);
+	}
+
+	50% {
+		transform: rotate(-180deg);
+	}
+
+	75% {
+		transform: rotate(-270deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+} 

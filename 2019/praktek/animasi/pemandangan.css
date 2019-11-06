@@ -1,0 +1,43 @@
+body {
+	background: black;
+	padding: 0;
+	margin: 0;
+}
+
+#jendela {
+	margin:50px auto;
+	width: 450px;
+	height: 600px;
+	background: skyblue;
+	position: relative;
+}
+
+.awan {
+	position: absolute;
+	width: 600px;
+	height: 250px;
+	background: url(asset/cloud.png);
+	background-size: cover;
+}
+
+.pohon {
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	bottom: 0;
+	left: 0;
+	background: url(asset/tree.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-repeat no-repeat mematikan pengulangan background*/
+}
+
+.rumput {
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background: url(asset/grass.png);
+	background-size: cover;
+	background-repeat: repeat-x;
+
+}

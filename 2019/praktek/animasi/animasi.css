@@ -78,3 +78,66 @@ body {
 	background: yellow;
 	transform: skew(20deg, 40deg);
 }
+
+/* translate */
+#translate {
+	background: blue;
+	color: white;
+}
+
+#translate:hover {
+	transform: translate(2em, 3em);
+}
+
+#translate2 {
+	background: green;
+	color: white;
+}
+
+#translate2:hover {
+	/* :hover -> kondisi ketika dilewati oleh mouse */
+	background: red;
+	transform: translateX(3em) translateY(3em);
+}
+
+/* transform origin */
+.kontener {
+	background: black;
+	border: 1px dashed red;
+	position: relative;
+	top:350px;
+	/* top : jarak antara batas atas dengan element, position harus non-static (absolute, relative, fixed) */
+	left: 40px;
+	/* left : jarak antara batas kiri dengan element */
+}
+
+#box1 {
+	background: red;
+	color: white;
+	transform-origin: 100% 0%;
+}
+
+#box1:hover {
+	transform: rotate(30deg);
+	transform-origin: 100% 0%;
+}
+
+/* transition */
+#contoh1 {
+	background: black;
+	color: white;
+	transition: transform 1s linear;
+	/*
+	1 properti
+	2 waktu jalan 1 putaran
+	3 gaya waktu
+	4 delay / waktu tunda
+	*/
+}
+
+#contoh1:hover {
+	transform: translate(100px,75px);
+	/*translate(x, y)*/
+	transition: transform 3s ease 2s;
+	/* linear | ease | ease-in | ease-out | ease-in-out */
+}
